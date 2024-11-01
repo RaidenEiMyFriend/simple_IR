@@ -1,0 +1,4 @@
+.vscode/*
+!.vscode/settings.json
+.pytest_cache/
+__pycache__
