@@ -14,14 +14,6 @@ This mini project will implement a simple search engine using Vector Space Model
     $ pip install requests underthesea beautifulsoup4
     ```
 
-- (Optional) Install `pytest` to run unit tests:
-
-    ```bash
-    $ pip install pytest
-    $ cd /path/to/project
-    $ pytest
-    ```
-
 - Install [git](https://git-scm.com/) and clone this project into local machine:
 
     ```bash
@@ -65,3 +57,4 @@ This mini project will implement a simple search engine using Vector Space Model
     ```
 
     > The above query results may be changed because indexed data can be updated. To get updated index, run `git pull origin windows` command.
+- For app: Run `app.py` and click the url given in your terminal (something like http://127.0.0.1:5000)
