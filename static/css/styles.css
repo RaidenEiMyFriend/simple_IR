@@ -1,0 +1,99 @@
+/* Background hình ảnh với hiệu ứng mờ */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://img.tripi.vn/cdn-cgi/image/width=700,height=700/https://gcs.tripi.vn/public-tripi/tripi-feed/img/476321BYu/anh-mo-ta.png') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(5px); /* Làm mờ hình nền */
+    position: relative;
+}
+
+/* Overlay màu sắc để làm nổi bật nội dung */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay màu đen với độ trong suốt */
+    z-index: -1;
+}
+
+/* Container chính */
+.container {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Màu nền trắng với độ trong suốt */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+/* Tiêu đề */
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Thanh tìm kiếm */
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Ô nhập liệu */
+#searchInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-right: none;
+    outline: none;
+}
+
+/* Nút tìm kiếm */
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Phần kết quả */
+#results {
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Từng kết quả */
+#results div {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Đường link */
+#results a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+#results a:hover {
+    text-decoration: underline;
+}

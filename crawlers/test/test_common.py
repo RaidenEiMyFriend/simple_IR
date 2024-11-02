@@ -9,7 +9,7 @@ class TestCommon(object):
             print(sitemap)
 
     def test_extract_urls_from_sitemap(self):
-        sitemap_url = 'https://vnexpress.net/sitemap/1000000/sitemap-news.xml?y=2018&m=05&d=25'
+        sitemap_url = 'https://vnexpress.net/sitemap/1000000/sitemap-news.xml?y=2024&m=11&d=01'
         urls = common.extract_urls_from_sitemap(sitemap_url)
         for url in urls[:10]:
             print(url)
