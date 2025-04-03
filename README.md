@@ -39,4 +39,4 @@ Search engine using Vector Space Model. The data will be crawled from Vietnamese
 - We have the UI of the website like this:
 ![UI](results/image1.png)
 - If we want to search something on the search box, for example: "Karim Benzema" then we will get this result:
-![Result](results/image1.png)
+![Result](results/image2.png)
